@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external stylesheet -->
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolios.html"class="active">2023 Artists</a>
+    <a href="artists.html">Featured Gallery</a>
+    <a href="apply.html">Apply to Sell</a>
+</nav>
+<body>
+    <h1>Artist Profiles</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>
+                <img class="artist-image" src="artist1.jpg" alt="Artist 1">
+            </td>
+            <td>Sarah Miller</td>
+            <td><a href="abstract.html">Abstract Art</a></td>
+            <td>New York City, New York</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="artist-image" src="artist2.jpg" alt="Artist 2">
+            </td>
+            <td>Sean Smith</td>
+            <td>Realism</td>
+            <td>Paris, France</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="artist-image" src="artist3.jpg" alt="Artist 2">
+            </td>
+            <td>Jane Arnold</td>
+            <td><a href="popart.html">PopArt</a></td>
+            <td>London, UK</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="artist-image" src="artist4.jpg" alt="Artist 2">
+            </td>
+            <td>Avery Schmidt</td>
+            <td><a href="contemp.html">Contemporary Art</a></td>
+            <td>Columbus, Ohio</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="artist-image" src="artist5.jpg" alt="Artist 2">
+            </td>
+            <td>Audrey Lanod</td>
+            <td>Portraiture</td>
+            <td>Los Angeles, CA</td>
+        </tr>
+    </table>
+    <h3> Other Artists</h3>
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search for an artist...">
+        <button onclick="showArtistList()">Search</button>
+    </div>
+    <div id="artist-list" style="display: none;">
+        <ul>
+            <li>Evelyn Hayes</li>
+            <li>Marcus Sullivan</li>
+            <li>Jasmine Nguyen</li>
+            <li>Carter Patel</li>
+            <li>Maya Thompson</li>
+            <li>Oliver Garcia</li>
+            <li>Penelope Walker</li>
+            <li>Leo Rodriguez</li>
+            <li>Harper Evans</li>
+            <li>Lucas Khan</li>
+            <li>Isabella Chen</li>
+            <li>Finn O'Malley</li>
+            <li>Ava Smith</li>
+            <li>Elijah Brown</li>
+            <li>Sofia Kim</li>
+            <li>Aiden Lopez</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    
+    </body>
+    </html>
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="Artfolio Logo" class="logo">
+            <p>ARTFOLIO © 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,430 @@
+body {
+    font-family: DM;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+body1 {
+    font-family: DM;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@font-face {
+    font-family: 'Dancing'; /* Name you'll use in your CSS */
+    src: url('Dancing.ttf') format('truetype'); /* Path to your font file */
+}
+@font-face {
+    font-family: 'DM';
+    src: url('DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Dancing', sans-serif; /* Apply the font to the h1 element */
+    font-size: 4.5em;
+    animation: colorChangeH1 8s infinite;
+    margin-bottom: 0.2em;
+    margin-top:0.1em;
+    text-align: center;
+}
+@keyframes colorChangeH1 {
+    0% { color: red; }
+    14.28% { color: orange; }
+    28.57% { color: yellow; }
+    42.85% { color: green; }
+    57.13% { color: blue; }
+    71.41% { color: purple; }
+    85.69% { color: magenta; }
+    100% { color: red}
+}
+
+h2 {
+    font-family: 'DM';
+    font-size: 1.5em;
+    color:black;
+    margin-top: 0.2em;
+    text-align: center;
+    }  
+
+h3 {
+        font-family: 'Dancing', sans-serif; /* Apply the font to the h1 element */
+        font-size: 4.5em;
+        margin-bottom: 0.2em;
+        margin-top:0.1em;
+        color:whitesmoke;
+        text-align: center;
+    }
+
+h4 {
+    font-family: 'DM';
+    font-size: 6.5em;
+    color:black;
+    margin-top: 0.2em;
+}
+
+h5 {
+    font-family: 'DM';
+    font-size: 6.5em;
+    color:white;
+    margin-top: 0.2em;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0); /* Transparent black background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around; /* To space out menu items horizontally */
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    background-image: url('plaque.png');
+    background-size: 100% 175%; /* Adjust the size to fit the space */
+    padding: 20px 30px;
+    background-repeat: no-repeat; /* Prevent the repetition */
+    background-position: center center;
+}
+nav a:first-child {
+    margin-left: 0; /* No left margin for the first item */
+}
+nav a:last-child {
+    margin-right: 0; /* No right margin for the last item */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.frame {
+    position: relative;
+    text-align: center;
+    width: 400px; /* Increase width for larger images */
+    height: 400px; /* Adjust height accordingly */
+    margin: 10px;
+    overflow: hidden;
+}
+
+.art-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use cover to fill the frame */
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+.art-image:hover {
+    opacity: 1; /* Change opacity on hover */
+}
+
+@keyframes colorChangeText {
+    0% { color: yellow; }
+    25% { color: palegoldenrod; }
+    50% { color: white; }
+    75% { color: palegoldenrod; }
+    100% { color: yellow; }
+}
+.text-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px; /* Adjust padding for a more compact background */
+    color: black;
+    text-align: center;
+    margin: 0.2em;
+    margin-bottom: 20px; 
+    font-size: 1.3em; /* Decrease font size for a more compact text */
+    animation: colorChangeText 5s infinite; /* Apply color animation */
+}
+
+footer {
+    background-color: rgba(201, 197, 197, 0.8);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; /* Optional: Add padding to the footer content */
+}
+.footer-content img {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0em; /* Adjust the bottom margin */
+    margin-top: 0em; /* Adjust the top margin */
+}
+
+.logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust space between logo and text */
+}
+
+.parallax {
+    height: 400px; /* Adjust as needed */
+    background-image: url('Parallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+.parallax h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.parallax p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.parallax1 {
+    height: 300px; /* Adjust as needed */
+    background-image: url('giphy.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+.parallax2 {
+    height: 300px; /* Adjust as needed */
+    background-image: url('abstract.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+.parallax3 {
+    height: 300px; /* Adjust as needed */
+    background-image: url('contemp.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minimum and maximum width for each column */
+    gap: 10px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%; /* Adjust the maximum width of the images */
+    max-height: 100%; /* Adjust the maximum height of the images */
+    object-fit: cover;
+}
+
+.spacer {
+    height: 50px; /* Adjust the height to create the space you want */
+}
+
+.artist-image {
+    width: 150px; /* Adjust this value as needed */
+    height: 150px; /* Set the height to match the width */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  .artist-image:hover {
+    transform: scale(1.1); /* Increase the size slightly */
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 1.5em;
+  }
+  td {
+    background-color: rgba(0, 0, 0, 0.3); /* Black transparent background */
+    color: #fff; /* Text color */
+  }
+  th {
+    background-color:transparent;
+    font-size: 2em;
+  }
+
+  a {
+    text-decoration: none; /* Remove underline */
+    font-family: "DM";
+    color: white; /* Change the color */
+    /* Add any other styles you want for the link text */
+  }
+  a:hover {
+    color: red; /* Change color on hover */
+  }
+
+.artwork {
+    text-align: center;
+    position: relative;
+}
+.artwork p {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.artwork p:hover {
+    color: red;
+}
+
+.slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    animation: colorChangeBackground 7s infinite;
+}
+@keyframes colorChangeBackground {
+    0% { background-color: pink; }
+    16.66% { background-color: hotpink; }
+    33.32% { background-color: magenta; }
+    49.98% { background-color: purple }
+    66.64% { background-color: magenta }
+    83.3% { background-color: hotpink;}
+    100% { background-color: pink; }
+}
+
+#sellArtForm {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, button1, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+button1 {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button1:hover {
+  background-color: #45a049;
+}
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+
+#search-container {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external stylesheet -->
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolios.html"class="active">2023 Artists</a>
+    <a href="artists.html">Featured Gallery</a>
+    <a href="apply.html">Apply to Sell</a>
+</nav>
+    <h1>Apply to Sell Your Art</h1>
+<body1>
+        <form id="sellArtForm" action="/submit-form" method="POST">
+            <label for="artistName">Artist Name:</label>
+            <input type="text" id="artistName" name="artistName" required>
+        
+            <label for="artType">Art Type:</label>
+            <input type="text" id="artType" name="artType" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="artwork">Upload Artwork:</label>
+            <input type="file" id="artwork" name="artwork"><br><br>
+        
+            <button1 type="submit">Submit</button1>
+          </form>
+    <script src="script.js"></script>
+</body1>
+</html>
